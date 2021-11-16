@@ -1,0 +1,219 @@
+*{
+    margin :0;
+    padding: 0;
+    font: 'Scheherazade New', serif;
+}
+body{
+    background-image: url(../img/paven.png);    
+}
+hr{
+    margin:auto ;    
+    width: 80%;
+
+}
+.content{
+    background-color: rgb(175, 172, 172);
+    display: grid;    
+    grid-template-columns: 5% 23% 67% 5%;
+    grid-template-rows:  350px 350px 650px 650px 700px;
+    z-index: 10;    
+}
+.cv{    
+    background: #fff;
+    grid-column: 3 / 3;
+    grid-row:  1 / 6;     
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 400px 1230px 770px ;    
+}
+
+.aside{
+    background-color: rgb(255, 255, 255);  
+    width: 22%;
+    height: 100%;    
+    margin-left: 4.5%;     
+    grid-column: 2 / 2;
+    grid-row:  1 / 7; 
+    position:fixed;
+    border-right: solid 20px #324;
+}
+.foto{    
+    display: flex;
+    justify-content: center;
+    align-items:center;  
+    border-radius: 50%;
+     
+}
+.borde{
+    margin-top: 50px;
+    margin-bottom: 20px;    
+    display: flex;
+    justify-content: center;
+    align-items:center;   
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;    
+    transition: all 0.2s;
+}
+.img{       
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;    
+}
+.name{
+    text-transform: uppercase;
+    font-size:26px;
+    margin: 15px 15px 2%;
+    
+}
+.aside p{   
+    margin: 15px 15px 2%;
+    font-size: 18px;
+}
+.aside h4{
+    margin-top: 15px;
+    margin-left: 5%;
+    font-size: 25px;
+}
+section h3{    
+    font-size: 58px;
+   margin: 50px 200px;
+}
+
+.objetivos{  
+    grid-column:1 /1;
+    grid-row:  1 / 2; 
+    margin-top: 50px;
+}
+
+.objetivos p{
+    margin: 50px;
+    font-size: 22px;
+}
+.objetivos:hover{   
+    background-color: rgba(95, 117, 224, 0.37);
+    transition:background-color 0.6s;   
+}
+.perfil{    
+    grid-column:1 /1;
+    grid-row:  2 / 3; 
+}
+.perfil p{
+    margin:50px;
+    font-size: 22px;
+}
+.perfil:hover{   
+    background-color: rgba(95, 117, 224, 0.37);
+    transition:background-color 0.6s;   
+}
+.estudios{   
+    grid-column: 1/1;
+    grid-row:  3 / 4; 
+}
+.estudios p{
+    margin:20px 50px;
+    font-size: 20px;
+}
+.estudios:hover{   
+    background-color: rgba(95, 117, 224, 0.37);
+    transition:background-color 0.6s;   
+}
+.experiencia{  
+    grid-column: 1 / 1;
+    grid-row:  4 / 5;  
+}
+.experiencia:hover{   
+    background-color: rgba(95, 117, 224, 0.37);
+    transition:background-color 0.6s;   
+}
+
+.experiencia p{
+    margin:20px 50px;
+    font-size: 20px;
+}
+.experiencia h5{
+    font-size: 26px;
+    margin-left: 40px;
+    text-decoration:underline;
+}
+.tipoTrabajo{
+    font-size: 44px;
+}
+
+h3{
+    font-size: 36px;
+    margin: 20px 15px 30px 50px;
+    text-transform: uppercase;
+}
+
+/* slider */
+.container-slider{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px #fff,
+                 0 15px 50px;
+    position: relative;    
+  }
+  .slider{
+    display: flex;
+    width: 500%;
+    height: 500px;
+    margin-left: -100%;
+  }
+  .slider__section{
+    z-index: 350;
+    width: 100%;      
+  }
+  .slider__img{
+    position: absolute;
+    z-index: 100;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: 300; 
+  } 
+  .slider__section__content p{
+    z-index: 200;  
+    position: absolute;  
+    width: 70%; 
+    height: 100%; 
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    line-height: 200px;
+    color: #ffff;
+    font-size: 69px;
+    font-weight: 700; 
+    text-shadow: 6px 3px 3px rgb(48, 47, 47);
+  }
+  
+  .slider__btn{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-family: monospace;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 400;
+  }
+  .slider__btn:hover{
+    background: #fff;
+  }
+  .slider__btn--left{
+  left: 10px;
+  }
+  .slider__btn--right{
+  right: 10px;
+  }
+  
